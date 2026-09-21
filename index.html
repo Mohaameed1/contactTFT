@@ -7,10 +7,9 @@
   <title>TFT | Transport Tunisie France</title>
 
   <meta name="description"
-        content="TFT Transport Tunisie France - Facebook, Instagram et WhatsApp.">
+        content="TFT Transport Tunisie France - Contactez-nous sur Facebook, Instagram et WhatsApp.">
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -27,76 +26,64 @@
       color: #073b66;
     }
 
-    /* ==========================================
-       PAGE PRINCIPALE
-    ========================================== */
+    /* =========================
+       PAGE
+    ========================== */
 
     .page {
       width: 100%;
       min-height: 100vh;
-
       display: flex;
       justify-content: center;
-
       padding: 30px 15px 50px;
     }
 
     .landing {
       width: 100%;
-      max-width: 850px;
-
-      background: white;
-
+      max-width: 1100px;
+      background: #ffffff;
       border-radius: 35px;
-
       overflow: hidden;
 
       box-shadow:
         0 20px 60px rgba(0, 55, 90, 0.20);
     }
 
-
-    /* ==========================================
-       HERO / IMAGE TFT
-    ========================================== */
+    /* =========================
+       HERO TFT
+    ========================== */
 
     .hero {
       position: relative;
-
       width: 100%;
-      height: 470px;
+      height: 560px;
 
       background-image:
         linear-gradient(
           to bottom,
           rgba(255,255,255,0.02) 55%,
-          rgba(255,255,255,0.95) 100%
+          rgba(255,255,255,0.97) 100%
         ),
         url("TFT.png");
 
       background-size: cover;
-      background-position: center center;
+      background-position: center;
       background-repeat: no-repeat;
     }
 
     .hero-overlay {
       position: absolute;
-
       left: 0;
       right: 0;
-      bottom: 15px;
-
-      text-align: center;
-
+      bottom: 20px;
       padding: 20px;
+      text-align: center;
     }
 
     .hero-title {
       font-family: Georgia, "Times New Roman", serif;
-
-      font-size: 48px;
+      font-size: 55px;
       font-weight: bold;
-
       color: #0875a8;
 
       text-shadow:
@@ -104,24 +91,19 @@
     }
 
     .hero-subtitle {
-      margin-top: 7px;
-
+      margin-top: 8px;
       color: #0875a8;
-
-      font-size: 18px;
+      font-size: 21px;
       font-weight: bold;
-
       letter-spacing: 2px;
     }
 
-
-    /* ==========================================
+    /* =========================
        CONTACT
-    ========================================== */
+    ========================== */
 
     .contact {
-      padding: 15px 55px 45px;
-
+      padding: 25px 90px 50px;
       text-align: center;
 
       background:
@@ -134,41 +116,34 @@
 
     h1 {
       color: #071f6b;
-
-      font-size: 48px;
-
-      margin-bottom: 12px;
+      font-size: 50px;
+      margin-bottom: 14px;
     }
 
     .description {
-      max-width: 620px;
-
-      margin: 0 auto 32px;
+      max-width: 700px;
+      margin: 0 auto 35px;
 
       color: #536273;
-
-      font-size: 18px;
-      line-height: 1.55;
+      font-size: 19px;
+      line-height: 1.6;
     }
 
-
-    /* ==========================================
+    /* =========================
        BOUTONS
-    ========================================== */
+    ========================== */
 
     .contact-button {
       width: 100%;
-      min-height: 95px;
+      min-height: 100px;
 
       display: flex;
       align-items: center;
 
-      margin: 17px 0;
-
-      padding: 16px 23px;
+      margin: 18px 0;
+      padding: 17px 25px;
 
       color: white;
-
       text-decoration: none;
 
       border-radius: 22px;
@@ -177,9 +152,9 @@
         0 8px 22px rgba(0,0,0,0.16);
 
       transition:
-        transform .2s ease,
-        box-shadow .2s ease,
-        filter .2s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
     }
 
     .contact-button:hover {
@@ -192,11 +167,8 @@
     }
 
     .contact-button:active {
-      transform: scale(.985);
+      transform: scale(0.985);
     }
-
-
-    /* FACEBOOK */
 
     .facebook {
       background:
@@ -206,9 +178,6 @@
           #0866d8
         );
     }
-
-
-    /* INSTAGRAM */
 
     .instagram {
       background:
@@ -221,9 +190,6 @@
         );
     }
 
-
-    /* WHATSAPP */
-
     .whatsapp {
       background:
         linear-gradient(
@@ -233,25 +199,22 @@
         );
     }
 
-
-    /* ==========================================
+    /* =========================
        ICONES
-    ========================================== */
+    ========================== */
 
     .icon {
-      width: 65px;
-      height: 65px;
-
-      min-width: 65px;
+      width: 68px;
+      height: 68px;
+      min-width: 68px;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      margin-right: 22px;
+      margin-right: 24px;
 
       background: white;
-
       border-radius: 50%;
 
       font-weight: bold;
@@ -259,107 +222,85 @@
 
     .facebook .icon {
       color: #1877f2;
-
-      font-size: 40px;
+      font-size: 42px;
     }
 
     .instagram .icon {
       color: #c13584;
-
       font-size: 32px;
     }
 
     .whatsapp .icon {
       color: #0eb34b;
-
-      font-size: 31px;
+      font-size: 30px;
     }
 
-
-    /* ==========================================
-       CONTENU BOUTON
-    ========================================== */
+    /* =========================
+       TEXTE BOUTONS
+    ========================== */
 
     .button-content {
       flex: 1;
-
       text-align: left;
     }
 
     .button-title {
       display: block;
-
       margin-bottom: 5px;
 
-      font-size: 25px;
+      font-size: 26px;
       font-weight: bold;
     }
 
     .button-subtitle {
       display: block;
-
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .arrow {
       margin-left: 15px;
-
-      font-size: 43px;
+      font-size: 45px;
       font-weight: 300;
     }
 
-
-    /* ==========================================
+    /* =========================
        SERVICES
-    ========================================== */
+    ========================== */
 
     .services {
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
+      grid-template-columns: repeat(4, 1fr);
       gap: 15px;
 
-      margin-top: 38px;
+      margin-top: 42px;
+      padding: 32px 0;
 
-      padding:
-        30px 0;
-
-      border-top:
-        1px solid #d8e7ef;
-
-      border-bottom:
-        1px solid #d8e7ef;
+      border-top: 1px solid #d8e7ef;
+      border-bottom: 1px solid #d8e7ef;
     }
 
     .service {
-      padding: 5px;
+      padding: 7px;
     }
 
     .service-icon {
-      margin-bottom: 9px;
-
-      font-size: 32px;
+      margin-bottom: 10px;
+      font-size: 34px;
     }
 
     .service-text {
       color: #164b73;
-
       font-size: 14px;
       font-weight: bold;
-
       line-height: 1.35;
     }
 
-
-    /* ==========================================
+    /* =========================
        FOOTER
-    ========================================== */
+    ========================== */
 
     .footer {
-      padding-top: 30px;
-
+      padding-top: 32px;
       text-align: center;
     }
 
@@ -376,8 +317,7 @@
     }
 
     .arabic {
-      margin:
-        5px 0 15px;
+      margin: 6px 0 16px;
 
       color: #0875a8;
 
@@ -387,20 +327,17 @@
 
     .scan {
       color: #718092;
-
       font-size: 16px;
     }
 
-
-    /* ==========================================
+    /* =========================
        TABLETTE
-    ========================================== */
+    ========================== */
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
 
       .page {
-        padding:
-          15px 10px 35px;
+        padding: 15px 10px 35px;
       }
 
       .landing {
@@ -408,23 +345,21 @@
       }
 
       .hero {
-        height: 420px;
+        height: 450px;
       }
 
       .contact {
-        padding:
-          10px 30px 38px;
+        padding: 20px 35px 40px;
       }
 
       h1 {
-        font-size: 42px;
+        font-size: 43px;
       }
     }
 
-
-    /* ==========================================
+    /* =========================
        MOBILE
-    ========================================== */
+    ========================== */
 
     @media (max-width: 600px) {
 
@@ -438,26 +373,18 @@
 
       .landing {
         max-width: none;
-
         border-radius: 0;
-
         box-shadow: none;
       }
 
-      /* IMAGE TFT EN HAUT */
-
       .hero {
         height: 310px;
-
         background-size: cover;
-
-        background-position:
-          center center;
+        background-position: center;
       }
 
       .hero-overlay {
         bottom: 5px;
-
         padding: 10px;
       }
 
@@ -467,16 +394,11 @@
 
       .hero-subtitle {
         font-size: 13px;
-
         letter-spacing: 1px;
       }
 
-
-      /* CONTACT */
-
       .contact {
-        padding:
-          25px 14px 35px;
+        padding: 25px 14px 35px;
       }
 
       h1 {
@@ -485,28 +407,19 @@
 
       .description {
         font-size: 15px;
-
         margin-bottom: 25px;
       }
 
-
-      /* BOUTONS */
-
       .contact-button {
         min-height: 80px;
-
         margin: 13px 0;
-
-        padding:
-          12px 14px;
-
+        padding: 12px 14px;
         border-radius: 17px;
       }
 
       .icon {
         width: 51px;
         height: 51px;
-
         min-width: 51px;
 
         margin-right: 13px;
@@ -530,29 +443,20 @@
 
       .button-subtitle {
         font-size: 13px;
-
         overflow-wrap: anywhere;
       }
 
       .arrow {
         margin-left: 6px;
-
         font-size: 29px;
       }
 
-
-      /* SERVICES */
-
       .services {
-        grid-template-columns:
-          repeat(2, 1fr);
-
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
 
         margin-top: 27px;
-
-        padding:
-          24px 0;
+        padding: 24px 0;
       }
 
       .service-icon {
@@ -562,9 +466,6 @@
       .service-text {
         font-size: 12px;
       }
-
-
-      /* FOOTER */
 
       .footer {
         padding-top: 24px;
@@ -583,10 +484,9 @@
       }
     }
 
-
-    /* ==========================================
+    /* =========================
        PETITS TELEPHONES
-    ========================================== */
+    ========================== */
 
     @media (max-width: 380px) {
 
@@ -610,12 +510,10 @@
       .icon {
         margin-right: 9px;
       }
-
     }
 
   </style>
 </head>
-
 
 <body>
 
@@ -623,10 +521,7 @@
 
   <main class="landing">
 
-
-    <!-- ========================================
-         VISUEL TRANSPORT TFT
-    ========================================= -->
+    <!-- IMAGE TFT -->
 
     <section class="hero">
 
@@ -645,9 +540,7 @@
     </section>
 
 
-    <!-- ========================================
-         CONTACT
-    ========================================= -->
+    <!-- CONTACT -->
 
     <section class="contact">
 
@@ -656,9 +549,8 @@
       </h1>
 
       <p class="description">
-        Choisissez votre moyen de contact et accédez
-        directement à nos réseaux sociaux ou contactez-nous
-        sur WhatsApp.
+        Choisissez votre moyen de contact et accédez directement
+        à nos réseaux sociaux ou contactez-nous sur WhatsApp.
       </p>
 
 
@@ -790,9 +682,7 @@
       </a>
 
 
-      <!-- ========================================
-           SERVICES
-      ========================================= -->
+      <!-- SERVICES -->
 
       <div class="services">
 
@@ -808,7 +698,6 @@
 
         </div>
 
-
         <div class="service">
 
           <div class="service-icon">
@@ -821,7 +710,6 @@
 
         </div>
 
-
         <div class="service">
 
           <div class="service-icon">
@@ -833,7 +721,6 @@
           </div>
 
         </div>
-
 
         <div class="service">
 
@@ -850,9 +737,7 @@
       </div>
 
 
-      <!-- ========================================
-           FOOTER
-      ========================================= -->
+      <!-- FOOTER -->
 
       <footer class="footer">
 
@@ -860,10 +745,7 @@
           TFT
         </div>
 
-        <div
-          class="arabic"
-          dir="rtl"
-        >
+        <div class="arabic" dir="rtl">
           نحنا لي قربنا لبعيد
         </div>
 
