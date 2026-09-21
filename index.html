@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TFT | Transport Tunisie France</title>
+
+  <meta
+    name="description"
+    content="TFT Transport Tunisie France - Retrouvez-nous sur Facebook, Instagram et WhatsApp."
+  >
+
+  <style>
+    /* =========================
+       RESET
+    ========================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #073b66;
+
+      background:
+        linear-gradient(
+          rgba(255, 255, 255, 0.20),
+          rgba(255, 255, 255, 0.35)
+        ),
+        url("TFT.png");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+
+    /* =========================
+       PAGE
+    ========================== */
+
+    .page {
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 35px 18px;
+    }
+
+
+    /* =========================
+       CARTE PRINCIPALE
+    ========================== */
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+
+      padding: 35px 28px;
+
+      text-align: center;
+
+      background: rgba(255, 255, 255, 0.94);
+
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 30px;
+
+      box-shadow:
+        0 20px 55px rgba(0, 48, 85, 0.25);
+
+      backdrop-filter: blur(7px);
+      -webkit-backdrop-filter: blur(7px);
+    }
+
+
+    /* =========================
+       MARQUE TFT
+    ========================== */
+
+    .brand {
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 46px;
+      font-weight: 700;
+
+      color: #0875a8;
+
+      margin-bottom: 6px;
+    }
+
+    .route {
+      color: #0875a8;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 27px;
+    }
+
+
+    /* =========================
+       TITRE
+    ========================== */
+
+    h1 {
+      color: #071f6b;
+
+      font-size: 38px;
+
+      margin-bottom: 10px;
+    }
+
+    .description {
+      max-width: 480px;
+
+      margin: 0 auto 28px;
+
+      color: #536273;
+
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       BOUTONS
+    ========================== */
+
+    .contact-button {
+      width: 100%;
+      min-height: 82px;
+
+      display: flex;
+      align-items: center;
+
+      margin: 14px 0;
+      padding: 15px 18px;
+
+      color: white;
+      text-decoration: none;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+      transition:
+        transform 0.20s ease,
+        box-shadow 0.20s ease,
+        filter 0.20s ease;
+    }
+
+    .contact-button:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 13px 28px rgba(0, 0, 0, 0.22);
+
+      filter: brightness(1.04);
+    }
+
+    .contact-button:active {
+      transform: scale(0.98);
+    }
+
+
+    /* FACEBOOK */
+
+    .facebook {
+      background:
+        linear-gradient(
+          135deg,
+          #2585f5,
+          #0866d8
+        );
+    }
+
+
+    /* INSTAGRAM */
+
+    .instagram {
+      background:
+        linear-gradient(
+          135deg,
+          #ff8a28 0%,
+          #f43f5e 30%,
+          #c13584 62%,
+          #833ab4 100%
+        );
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      background:
+        linear-gradient(
+          135deg,
+          #25d366,
+          #08a83d
+        );
+    }
+
+
+    /* =========================
+       ICÔNES
+    ========================== */
+
+    .icon {
+      width: 54px;
+      height: 54px;
+
+      min-width: 54px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: 18px;
+
+      background: white;
+
+      border-radius: 50%;
+
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .facebook .icon {
+      color: #1877f2;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 34px;
+    }
+
+    .instagram .icon {
+      color: #c13584;
+      font-size: 25px;
+    }
+
+    .whatsapp .icon {
+      color: #10ae48;
+      font-size: 25px;
+    }
+
+
+    /* =========================
+       TEXTE DES BOUTONS
+    ========================== */
+
+    .button-content {
+      flex: 1;
+      text-align: left;
+    }
+
+    .button-title {
+      display: block;
+
+      margin-bottom: 4px;
+
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .button-subtitle {
+      display: block;
+
+      font-size: 15px;
+      font-weight: 400;
+
+      opacity: 0.96;
+    }
+
+    .arrow {
+      margin-left: 10px;
+
+      font-size: 36px;
+      font-weight: 300;
+    }
+
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 8px;
+
+      margin-top: 30px;
+      padding-top: 25px;
+
+      border-top: 1px solid #d8e7ef;
+    }
+
+    .service {
+      padding: 8px 4px;
+    }
+
+    .service-icon {
+      margin-bottom: 8px;
+
+      font-size: 27px;
+    }
+
+    .service-text {
+      color: #164b73;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      line-height: 1.3;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    .footer {
+      margin-top: 25px;
+      padding-top: 22px;
+
+      border-top: 1px solid #d8e7ef;
+    }
+
+    .footer-logo {
+      margin-bottom: 4px;
+
+      color: #0875a8;
+
+      font-family: Georgia, "Times New Roman", serif;
+
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .arabic {
+      margin-bottom: 15px;
+
+      color: #0875a8;
+
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .scan {
+      color: #718092;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 600px) {
+
+      body {
+        background-attachment: scroll;
+        background-position: center top;
+      }
+
+      .page {
+        align-items: flex-start;
+
+        padding: 20px 12px;
+      }
+
+      .card {
+        padding: 27px 16px;
+
+        border-radius: 24px;
+      }
+
+      .brand {
+        font-size: 40px;
+      }
+
+      .route {
+        font-size: 14px;
+
+        margin-bottom: 23px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 15px;
+
+        margin-bottom: 23px;
+      }
+
+      .contact-button {
+        min-height: 76px;
+
+        padding: 12px 13px;
+
+        border-radius: 16px;
+      }
+
+      .icon {
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+
+        margin-right: 13px;
+
+        font-size: 23px;
+      }
+
+      .facebook .icon {
+        font-size: 30px;
+      }
+
+      .button-title {
+        font-size: 17px;
+      }
+
+      .button-subtitle {
+        font-size: 13px;
+      }
+
+      .arrow {
+        font-size: 28px;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+      }
+
+      .arabic {
+        font-size: 21px;
+      }
+    }
+
+
+    /* =========================
+       PETITS TÉLÉPHONES
+    ========================== */
+
+    @media (max-width: 380px) {
+
+      .button-title {
+        font-size: 16px;
+      }
+
+      .button-subtitle {
+        font-size: 12px;
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <div class="page">
+
+    <main class="card">
+
+
+      <!-- =====================
+           TFT
+      ====================== -->
+
+      <div class="brand">
+        TFT
+      </div>
+
+      <div class="route">
+        TRANSPORT TUNISIE ↔ FRANCE
+      </div>
+
+
+      <!-- =====================
+           TITRE
+      ====================== -->
+
+      <h1>
+        Contactez-nous
+      </h1>
+
+      <p class="description">
+        Choisissez votre moyen de contact et accédez directement
+        à nos réseaux sociaux ou contactez-nous sur WhatsApp.
+      </p>
+
+
+      <!-- =====================
+           FACEBOOK
+      ====================== -->
+
+      <a
+        class="contact-button facebook"
+        href="https://www.facebook.com/profile.php?id=100066693984604"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Accéder à notre page Facebook"
+      >
+
+        <div class="icon">
+          f
+        </div>
+
+        <div class="button-content">
+
+          <span class="button-title">
+            Facebook
+          </span>
+
+          <span class="button-subtitle">
+            Accéder à notre page
+          </span>
+
+        </div>
+
+        <div class="arrow">
+          ›
+        </div>
+
+      </a>
+
+
+      <!-- =====================
+           INSTAGRAM
+      ====================== -->
+
+      <a
+        class="contact-button instagram"
+        href="https://www.instagram.com/tft_transport_france_tunisie"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Accéder à notre compte Instagram"
+      >
+
+        <div class="icon">
+          ◎
+        </div>
+
+        <div class="button-content">
+
+          <span class="button-title">
+            Instagram
+          </span>
+
+          <span class="button-subtitle">
+            @tft_transport_france_tunisie
+          </span>
+
+        </div>
+
+        <div class="arrow">
+          ›
+        </div>
+
+      </a>
+
+
+      <!-- =====================
+           WHATSAPP KARIM
+      ====================== -->
+
+      <a
+        class="contact-button whatsapp"
+        href="https://wa.me/33758062401"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contacter Karim sur WhatsApp"
+      >
+
+        <div class="icon">
+          ☎
+        </div>
+
+        <div class="button-content">
+
+          <span class="button-title">
+            WhatsApp — Karim
+          </span>
+
+          <span class="button-subtitle">
+            +33 7 58 06 24 01
+          </span>
+
+        </div>
+
+        <div class="arrow">
+          ›
+        </div>
+
+      </a>
+
+
+      <!-- =====================
+           WHATSAPP KAMEL
+      ====================== -->
+
+      <a
+        class="contact-button whatsapp"
+        href="https://wa.me/33615682708"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contacter Kamel sur WhatsApp"
+      >
+
+        <div class="icon">
+          ☎
+        </div>
+
+        <div class="button-content">
+
+          <span class="button-title">
+            WhatsApp — Kamel
+          </span>
+
+          <span class="button-subtitle">
+            +33 6 15 68 27 08
+          </span>
+
+        </div>
+
+        <div class="arrow">
+          ›
+        </div>
+
+      </a>
+
+
+      <!-- =====================
+           SERVICES
+      ====================== -->
+
+      <section class="services">
+
+        <div class="service">
+
+          <div class="service-icon">
+            🛡️
+          </div>
+
+          <div class="service-text">
+            Transport sécurisé
+          </div>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-icon">
+            🚚
+          </div>
+
+          <div class="service-text">
+            Livraison fiable
+          </div>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-icon">
+            🌍
+          </div>
+
+          <div class="service-text">
+            Tunisie ↔ France
+          </div>
+
+        </div>
+
+
+        <div class="service">
+
+          <div class="service-icon">
+            🤝
+          </div>
+
+          <div class="service-text">
+            À votre service
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================
+           FOOTER
+      ====================== -->
+
+      <footer class="footer">
+
+        <div class="footer-logo">
+          TFT
+        </div>
+
+        <div class="arabic" dir="rtl">
+          نحنا لي قربنا لبعيد
+        </div>
+
+        <div class="scan">
+          Scannez • Cliquez • Contactez-nous
+        </div>
+
+      </footer>
+
+
+    </main>
+
+  </div>
+
+</body>
+</html>
